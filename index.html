@@ -12,17 +12,19 @@
         <button onclick="displayFibonacci()" class="continueFibonacciBtn">Next</button>
         <div class="fibonacci"></div>
     </section>
-    <section>
+    <h3 class="title">Slider :</h3>
+    <section class="slider-section">
+        <div onclick="previousSlide()" class="arrow-slider" title="Previous" >&lt;</div>
         <div class="cats">
             <div class="cat"><img src="./images/chat1.jpg" alt="Cat blue eyes"></div>
             <div class="cat selected"><img src="./images/chat2.jpg" alt="Big cat"></div>
             <div class="cat"><img src="./images/chat3.jpg" alt="Kitten meowing"></div>
         </div>
-
+        <div onclick="nextSlide()" class="arrow-slider" title="Next" >&gt;</div>
     </section>
 </body>
 
-<script src="fibonacci.js">
-</script>
+<script src="fibonacci.js"></script>
+<script src="slider.js"></script>
 
 </html>

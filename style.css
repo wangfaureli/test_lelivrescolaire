@@ -2,17 +2,30 @@ body {
     background-color: #5852c4;
 }
 
-.cats {
+.slider-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+}
+
+.cats {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 390px;
+    overflow: hidden;
+    transition: all 1s ease;
 }
 
 .cats div.cat {
+    position: relative;
+    float: left;
     height: 150px;
     width: 50px;
+    margin: 15px;
     overflow: hidden;
+    transition: all 1s ease;
 }
 
 .cats div.cat.selected {
@@ -21,5 +34,14 @@ body {
 }
 
 .cats div.cat img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-44%);
     height: 100%;
+}
+
+.arrow-slider {
+    font-size: 45px;
+    font-weight: 900;
+    cursor: pointer;
 }
