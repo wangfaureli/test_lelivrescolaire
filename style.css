@@ -1,0 +1,25 @@
+body {
+    background-color: #5852c4;
+}
+
+.cats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cats div.cat {
+    height: 150px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.cats div.cat.selected {
+    height: 600px;
+    width: 200px;
+}
+
+.cats div.cat img {
+    height: 100%;
+}
